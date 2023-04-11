@@ -1,1 +1,54 @@
 /* flexbox, media queries, and CSS variables. */
+* {
+    box-sizing: border-box;
+  }
+#nav-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li a {
+    display: block;
+    color: white;
+    font-size: 26px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+.nav-title{
+    color: white;
+    font-size: 30px;
+    padding: 14px 16px;
+    font-weight: bolder;
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  
+  .flex-item-left {
+    background-color: #f1f1f1;
+    padding: 10px;
+    flex: 50%;
+  }
+  
+  .flex-item-right {
+    background-color: white;
+    padding: 10px;
+    flex: 50%;
+  }
+  @media (max-width: 800px) {
+    .flex-item-right, .flex-item-left {
+      flex: 100%;
+    }
+  }
