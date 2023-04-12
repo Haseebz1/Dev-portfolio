@@ -1,6 +1,14 @@
 /* flexbox, media queries, and CSS variables. */
+:root {
+    --navlink : rgb(167, 91, 238) ;
+    --light: rgb(199, 181, 184);
+    --dark:rgb(46, 17, 46) ;
+    
+}
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
 
 /* nav start */
@@ -9,7 +17,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: var(--navlink);
 }
 li a {
     display: block;
@@ -41,17 +49,18 @@ li a {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+    background-color: var(--light);
   }
  
   
   .flex-item-left {
-    background-color: #f1f1f1;
+    background-color: var(--dark);
     padding: 10px;
     flex: 50%;
   }
   
   .flex-item-right {
-    background-color: white;
+    background-color: var(--light);
     padding: 10px;
     flex: 50%;
   }
@@ -78,6 +87,7 @@ li a {
   #project-image img {
     max-width: 100%;
   }
+  
 /* Project Image styling end */
 
 /* Media quries for different screens start */
@@ -87,3 +97,4 @@ li a {
     }
   }
 /* Media quries for different screens end */
+
