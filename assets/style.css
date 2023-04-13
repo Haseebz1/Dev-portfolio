@@ -28,7 +28,7 @@ li a {
     text-decoration: none;
   }
   li a:hover{
-    border-bottom: 7px solid lightblue;
+    border-bottom: 7px solid rgb(39, 52, 68);
   }
 .nav-title{
     color: white;
